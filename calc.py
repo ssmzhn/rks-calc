@@ -1,6 +1,6 @@
 import json
-chart_list = json.load(open('chart.json'))
-song_name_list = json.load(open('song_name.json'))
+chart_list = json.load(open('chart.json',encoding="utf8"))
+song_name_list = json.load(open('song_name.json',encoding="utf8"))
 #score_list = json.load(open('score.json'))
 def get_phigros_info(score_list):
     used_score = {}

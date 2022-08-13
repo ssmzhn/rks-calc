@@ -6,7 +6,7 @@ def rplc(s):
     return s.replace('ࠈ','').replace('؆','').replace('Ȃ','').replace('Є','')
 from bs4 import BeautifulSoup as bs
 def get_score(score_source_file):
-    f=open(score_source_file)
+    f=open(score_source_file,encoding="utf8")
     d={}
     s=f.read()
     xml=bs(s,'lxml-xml')
