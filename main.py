@@ -1,6 +1,7 @@
 import unpack  # 解包 .ab 和 .tar
 import replace # 解码存档
 import calc    # 计算 rks
+import phicture
 import os
 import sys
 def adb_extract(filename):
@@ -29,6 +30,15 @@ def main(file):
         print('({}) {} {} Lv.{} {}'.format(i+1,x['song'],x['level'],x['difficulty'],x['score']))
         print('     ACC: {} 单曲RKS: {}'.format(x['acc'],x['rks']))
         i+=1
+    choice = None
+    while True:
+        choice = input('是否使用 Phicture 保存成图片 (y/n):')
+        if choice in ('y','n'):
+            break
+        print('输入有误，请重新输入。')
+    if choice == 'y':
+        path = input('请输入保存路径: (绝对路径，包含文件名，扩展名必须为.png: ')
+        phicture.phicture(score,path)
 if __name__ == '__main__':
     print('欢迎使用 rks 计算器! ')
     print('    (1) 已有 *.ab 备份文件，直接计算')

@@ -13,6 +13,8 @@ def get_phigros_info(score_list):
     for x in used_score:
         song_info = chart_list[song_name_list['.'.join(x.split('.')[:2])]]
         song = song_info['song']
+        illustration = song_info['illustration']
+        composer = song_info['composer']
         level = x.split('.')[-1]
         score = int(used_score[x]['s'])
         acc = float(used_score[x]['a'])
@@ -31,6 +33,8 @@ def get_phigros_info(score_list):
             is_phi=True
         used_score_2[x]={}
         used_score_2[x]['song']=song
+        used_score_2[x]['composer']=composer
+        used_score_2[x]['illustration']=illustration
         used_score_2[x]['level']=level
         used_score_2[x]['difficulty']=difficulty
         used_score_2[x]['score']=score
