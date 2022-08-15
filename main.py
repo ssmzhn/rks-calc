@@ -7,10 +7,10 @@ import sys
 def adb_extract(filename):
     if os.system('adb version') != 0:
         return -1
+    print('请连接手机，并进入开发者选项打开 USB 调试。若 Linux 系统提示输入密码，请输入。')
     if os.name == 'posix':
         os.system('sudo adb start-server')
     else:
-        print('请连接手机，并进入开发者选项打开 USB 调试...')
         os.system('adb start-server')
     if os.system('adb backup -f {} com.PigeonGames.Phigros'.format(filename)) != 0:
         return -2
@@ -67,7 +67,7 @@ if __name__ == '__main__':
             print('提取错误! 可能有下列原因: ')
             print('    1. 未安装 Phigros;')
             print('    2. 驱动未安装、手机未连接或未打开 USB 调试;')
-            print('    3. 无法写入文件，可能是因为保存位置的上级目录不存在;')
+            print('    3. 无法写入文件，可能是因为保存位置的上级目录不存在、保存位置已存在文件或目录（若您填写成一个目录，请在最后加上文件名）;')
             print('    4. 未正确打开 ADB 服务，这可能是没有用管理员或 root 打开 adb;')
             print('    5. 其他杂七杂八的问题。')
             sys.exit(-2)
