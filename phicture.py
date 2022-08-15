@@ -3,11 +3,13 @@ from PIL import ImageDraw, ImageFont, ImageEnhance
 import requests
 import calc
 import io
-import os
+import os,sys
 def phicture(score,output):
     rks_box = (3329,158,3329+739,158+204)
     info=calc.get_phigros_info(score) # replace.py返回的东西
     songs = info['b19']
+    for x in range(19-len(songs)):
+        songs.append(None)
     songs.insert(0,info['phi'])
     background = Image.open('src/phi_blur.png')
     draw = ImageDraw.Draw(background)
@@ -44,7 +46,13 @@ def phicture(score,output):
             background.paste(region,box)
             queue_pic=None
             if songs[times]!=None:
-                illu = Image.open(io.BytesIO(requests.get(songs[times]['illustration']).content))
+                illu = None
+                try:
+                    illu = Image.open(io.BytesIO(requests.get(songs[times]['illustration']).content))
+                except:
+                    print('下载曲绘时出错！请检查网络。')
+                    sys.exit(-4)
+                    
                 illu_resize = illu.resize(size=(int((height-2*blank)/9*16),height-2*blank))
                 background.paste(illu_resize,box=(x*width+blank, y*height+offset+blank))
     
@@ -90,7 +98,8 @@ def phicture(score,output):
                 background.paste(rank.resize(size=(height-2*blank,height-2*blank)),box=info_box,mask=rank.resize(size=(height-2*blank,height-2*blank)))
                 draw.text(((x+1)*width-blank-250,y*height+offset+blank+15),str(songs[times]['score']),fill=(255,255,255),font=song_font)
                 draw.text(((x+1)*width-blank-440,y*height+offset+blank+80),'ACC: {:.3f}'.format(songs[times]['acc'])+'%     RKS: {:.3f}'.format(songs[times]['rks']),fill=(255,255,255),font=composer_font)
-    
+            else:
+                draw.text((info_box[0]+20+height-2*blank,info_box[1]+15),'虚位以待',fill=(255,255,255),font=song_font)
             queue_pic=None
             queue = None
             if times==0:
