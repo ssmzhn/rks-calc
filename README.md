@@ -34,5 +34,7 @@ python main.py
 
 ## 开源
 [abe.jar](https://github.com/nelencov/android-backup-extractor) Apache 2.0
+
 图片素材归属 Xiamen Pigeon Games Network Co., Ltd.
+
 其他资源 GPL 3.0
