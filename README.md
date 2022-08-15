@@ -30,7 +30,7 @@ python main.py
 
 - 禁止在本项目的任何位置（包括issue页面和将来的wiki页面）提出或探讨关于“音游王（简写为：yyw）”的应对措施。
 
-- 项目中部分资源文件版权归鸽游 (Pigeon Games) 或其他个人或单位所有。
+- 项目中部分资源文件版权归鸽游 (Pigeon Games) 或其他个人或单位所有，如有侵权请联系作者下架相关内容。
 
 ## 开源
 [abe.jar](https://github.com/nelencov/android-backup-extractor) Apache 2.0
