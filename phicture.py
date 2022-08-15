@@ -3,6 +3,7 @@ from PIL import ImageDraw, ImageFont, ImageEnhance
 import requests
 import calc
 import io
+import os
 def phicture(score,output):
     rks_box = (3329,158,3329+739,158+204)
     info=calc.get_phigros_info(score) # replace.py返回的东西
@@ -101,4 +102,12 @@ def phicture(score,output):
             background.paste(queue_pic,box=(x*width+blank, y*height+offset+blank))
             draw.text((x*width+blank+4, y*height+offset+blank+4),queue,fill=(255,255,255),font=level_font)
     #background.show()
-    background.save(output)
+    outputpng=None
+    if os.path.split(output)[-1].split('.')[-1]!='png':
+        outputpng = output+'.png'
+    else:
+        outputpng = output
+    try:
+        background.save(outputpng)
+    except:
+        print('图片无法写入 {} 。'.format(outputpng))

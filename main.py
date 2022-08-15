@@ -17,7 +17,12 @@ def adb_extract(filename):
 
 def main(file):
     data_dir = unpack.unpack(file)
+    if data_dir in (-1,-2):
+        sys.exit(-3)
     xml_file = "{data_dir}{separate}apps{separate}com.PigeonGames.Phigros{separate}sp{separate}com.PigeonGames.Phigros.v2.playerprefs.xml".format(data_dir=data_dir,separate=unpack.separate)
+    if not os.path.exists(xml_file):
+        print('未找到存档文件 {}，请确认您提供的 .ab 文件是否有效。'.format(xml_file))
+        sys.exit(-3)
     score = replace.get_score(score_source_file=xml_file)
     info = calc.get_phigros_info(score_list=score)
     print('Ranking Score: {}'.format(info['rks']))
@@ -32,12 +37,12 @@ def main(file):
         i+=1
     choice = None
     while True:
-        choice = input('是否使用 Phicture 保存成图片 (y/n):')
+        choice = input('是否使用 Phicture 保存成图片 (y/n): ')
         if choice in ('y','n'):
             break
         print('输入有误，请重新输入。')
     if choice == 'y':
-        path = input('请输入保存路径: (绝对路径，包含文件名，扩展名必须为.png: ')
+        path = input('请输入保存路径: (绝对路径，包含文件名): ')
         phicture.phicture(score,path)
 if __name__ == '__main__':
     print('欢迎使用 rks 计算器! ')
@@ -48,7 +53,7 @@ if __name__ == '__main__':
         choice = input('请选择 ( 1 或 2 ): ')
         if choice in ('1','2'):
             break
-        print('输入有误，请重新输入: ')
+        print('输入有误，请重新输入。')
     if choice == '1':
         main(input('请输入 adb 备份后的 .ab 文件绝对路径: '))
     elif choice == '2':
