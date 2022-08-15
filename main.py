@@ -10,6 +10,7 @@ def adb_extract(filename):
     if os.name == 'posix':
         os.system('sudo adb start-server')
     else:
+        print('请连接手机，并进入开发者选项打开 USB 调试...')
         os.system('adb start-server')
     if os.system('adb backup -f {} com.PigeonGames.Phigros'.format(filename)) != 0:
         return -2
@@ -57,7 +58,7 @@ if __name__ == '__main__':
     if choice == '1':
         main(input('请输入 adb 备份后的 .ab 文件绝对路径: '))
     elif choice == '2':
-        file = input('请输入存档的保存位置 (绝对路径): ')
+        file = input('请输入存档的保存位置 (绝对路径，包括文件名，扩展名为 .ab): ')
         adb_code = adb_extract(file)
         if adb_code==-1:
             print('未找到 ADB 程序! 请下载 ADB 软件包并配置环境变量。')
