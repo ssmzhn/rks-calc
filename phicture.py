@@ -19,7 +19,7 @@ def phicture(score,output):
     song_font = ImageFont.truetype(os.path.join(calc.res_path,'font.ttf'),size = 50)
     composer_font = ImageFont.truetype(os.path.join(calc.res_path,'font.ttf'),size = 30)
     rks_font = ImageFont.truetype(os.path.join(calc.res_path,'font.ttf'),size = 70)
-    draw.text((1180,280),'Coded by NameSetter (ssmzhn)',fill=(255,255,255),font=song_font)
+    draw.text((30,30),'Coded by NameSetter (ssmzhn)',fill=(255,255,255,150),font=composer_font)
     rks_reg = ImageEnhance.Brightness(background.crop(rks_box)).enhance(0.5)
     background.paste(rks_reg,rks_box)
     

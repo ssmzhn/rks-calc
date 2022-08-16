@@ -71,6 +71,15 @@ if __name__ == '__main__':
         adb_code = adb_extract(file)
         if adb_code==-1:
             print('未找到 ADB 程序! 请下载 ADB 软件包并配置环境变量。')
+            if os.name=='nt':
+                print('请使用下面的步骤配置 ADB: ')
+                print('    (1) 下载 https://dl.google.com/android/repository/platform-tools-latest-windows.zip ')
+                print('    (2) 解压该文件，解压出来的文件夹中应该有一个 platform-tools 文件夹。把这个 platform-tools 文件夹的绝对路径记好，后面要用;')
+                print('    (3) 右键此电脑（或这台电脑、计算机、我的电脑等等），选择属性，单击左侧的高级系统设置，在弹出来的选项卡中选择“高级”，再单击环境变量;')
+                print('    (4) 在“xx的用户变量”中选择“Path”，单击它，再单击“xx的用户变量”下方的编辑;')
+                print('    (5) 在“编辑环境变量”对话框中点击“新建”，然后输入刚刚第二步得到的 platform-tools 文件夹绝对路径。点击确定配置成功，有可能需要重启生效;')
+                print('        例如：假设第 2 步解压出来的文件夹是 D:\\adb_tools，该文件夹里有一个 platform-tools 文件夹，此时就应该填入 D:\\adb_tools\\platform-tools ')
+            pause()
             sys.exit(-1)
         elif adb_code==-2:
             print('提取错误! 可能有下列原因: ')
