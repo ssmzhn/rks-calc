@@ -37,7 +37,10 @@ def main(file):
     info = calc.get_phigros_info(score_list=score)
     print('Ranking Score: {}'.format(info['rks']))
     phi=info['phi']
-    print('Best Phi: {} {} Lv.{} {}'.format(phi['song'],phi['level'],phi['difficulty'],phi['score']))
+    if phi == None:
+        print('没有 Phi 哦，多练！')
+    else:
+        print('Best Phi: {} {} Lv.{} {}'.format(phi['song'],phi['level'],phi['difficulty'],phi['score']))
     print('          ACC: {} 单曲RKS: {}'.format(phi['acc'],phi['rks']))
     print('----Best 19----')
     i=0

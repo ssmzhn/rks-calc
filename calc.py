@@ -76,11 +76,11 @@ def get_phigros_info(score_list):
         total_rks+=best_phi['rks']
     for x in range(len(sorted_b19)):
         total_rks+=sorted_b19[x]['rks']
-    if best_phi==None:
-        total_rks/=19
-    else:
-        total_rks/=20
- 
+    # if best_phi==None:
+    #     total_rks/=19
+    # else:
+    #     total_rks/=20
+    total_rks/=20
     ans = {}
     ans['b19']=sorted_b19
     ans['phi']=best_phi
