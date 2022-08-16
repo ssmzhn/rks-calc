@@ -47,7 +47,7 @@ def main(file):
         i+=1
     choice = None
     while True:
-        choice = input('是否使用 Phicture 保存成图片 (y/n): ')
+        choice = input('是否保存成图片 (y/n): ')
         if choice in ('y','n'):
             break
         print('输入有误，请重新输入。')
@@ -55,7 +55,7 @@ def main(file):
         path = input('请输入保存路径: (绝对路径，包含文件名): ')
         phicture.phicture(score,path)
 if __name__ == '__main__':
-    print('欢迎使用 rks 计算器! ')
+    print('欢迎使用 Phicture! Coded by NameSetter (ssmzhn)')
     print('    (1) 已有 *.ab 备份文件，直接计算')
     print('    (2) 没有 *.ab 备份文件，备份后计算')
     choice = 0
