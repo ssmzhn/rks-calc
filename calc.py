@@ -1,6 +1,12 @@
 import json
-chart_list = json.load(open('chart.json',encoding='utf8'))
-song_name_list = json.load(open('song_name.json',encoding='utf8'))
+import sys,os
+res_path = None
+if getattr(sys, 'frozen', False): #是否Bundle Resource
+    res_path = sys._MEIPASS
+else:
+    res_path = os.path.abspath("./res")
+chart_list = json.load(open(os.path.join(res_path,'chart.json'),encoding='utf8'))
+song_name_list = json.load(open(os.path.join(res_path,'song_name.json'),encoding='utf8'))
 #score_list = json.load(open('score.json'))
 def get_phigros_info(score_list):
     used_score = {}

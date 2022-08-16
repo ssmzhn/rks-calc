@@ -2,12 +2,12 @@
 ## 介绍
 通过 ADB 生成的 Android Backup (\*.ab) 文件计算 Ranking Score，并输出 png 图片。
 ## 环境和依赖
-* Java (class file version > 52)
 * Python 3
     * pyDes
     * lxml
 	* requests
 	* pillow
+	* pycryptodome
 ## 使用
 直接
 ```
@@ -33,8 +33,8 @@ python main.py
 - 项目中部分资源文件版权归鸽游 (Pigeon Games) 或其他个人或单位所有，如有侵权请联系作者下架相关内容。
 
 ## 开源
-[abe.jar](https://github.com/nelencov/android-backup-extractor) Apache 2.0
+[ab\_decrypt.py](https://github.com/lclevy/ab_decrypt) GPL-3.0
 
 图片素材归属 Xiamen Pigeon Games Network Co., Ltd.
 
-其他资源 GPL 3.0
+其他资源 GPL-3.0

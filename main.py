@@ -4,21 +4,30 @@ import calc    # 计算 rks
 import phicture
 import os
 import sys
+def pause():
+    if os.name == 'nt':
+        os.system('pause')
 def adb_extract(filename):
+    print('请事先安装 ADB 工具并添加至环境变量。若已安装，则继续。')
+    pause()
     if os.system('adb version') != 0:
         return -1
-    print('请连接手机，并进入开发者选项打开 USB 调试。若 Linux 系统提示输入密码，请输入。')
+    print('请连接手机，并进入开发者选项打开 USB 调试。解锁手机，若手机上弹出“是否使用这台计算机进行调试”的弹框，请确认。若 Linux 系统提示输入密码，请输入。')
+    pause()
     if os.name == 'posix':
         os.system('sudo adb start-server')
     else:
         os.system('adb start-server')
+    os.system('adb devices')
+    print('准备备份。请解锁手机，当手机上有确认备份文件的页面弹出时，选择“备份所有文件”。注意：不要输入密码！！！')
+    pause()
     if os.system('adb backup -f {} com.PigeonGames.Phigros'.format(filename)) != 0:
         return -2
     return filename
 
 def main(file):
     data_dir = unpack.unpack(file)
-    if data_dir in (-1,-2):
+    if data_dir == False:
         sys.exit(-3)
     xml_file = "{data_dir}{separate}apps{separate}com.PigeonGames.Phigros{separate}sp{separate}com.PigeonGames.Phigros.v2.playerprefs.xml".format(data_dir=data_dir,separate=unpack.separate)
     if not os.path.exists(xml_file):
@@ -67,7 +76,7 @@ if __name__ == '__main__':
             print('提取错误! 可能有下列原因: ')
             print('    1. 未安装 Phigros;')
             print('    2. 驱动未安装、手机未连接或未打开 USB 调试;')
-            print('    3. 无法写入文件，可能是因为保存位置的上级目录不存在、保存位置已存在文件或目录（若您填写成一个目录，请在最后加上文件名）;')
+            print('    3. 无法写入文件，可能是因为保存位置的上级目录不存在、保存位置已存在文件或目录（若您填写成一个目录，请在最后加上文件名）。如果您确信您填写的文件确实存在，可能是因为没有扩展名。请手动在文件名后添加“.ab”，再次尝试;')
             print('    4. 未正确打开 ADB 服务，这可能是没有用管理员或 root 打开 adb;')
             print('    5. 其他杂七杂八的问题。')
             sys.exit(-2)
