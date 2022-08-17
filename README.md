@@ -9,6 +9,7 @@
 	* pillow
 	* pycryptodome
 	* beautifulsoup4
+	* getch
 ## 使用
 直接
 ```

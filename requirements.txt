@@ -3,3 +3,4 @@ pydes
 requests
 pillow
 pycryptodome
+getch
