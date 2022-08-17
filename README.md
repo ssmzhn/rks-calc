@@ -8,6 +8,7 @@
 	* requests
 	* pillow
 	* pycryptodome
+	* beautifulsoup4
 ## 使用
 直接
 ```
@@ -18,7 +19,7 @@ python main.py
 > 我写了一坨大粪，可能会非常慢，耐心等待。
 
 ## 截图
-[![vaorYF.png](https://s1.ax1x.com/2022/08/15/vaorYF.png)](https://imgtu.com/i/vaorYF)
+![](https://s3.bmp.ovh/imgs/2022/08/17/a57e6ef7095dc6bb.png)
 
 ## 注意事项
 
