@@ -96,7 +96,7 @@ def phicture(score,output):
                     rank = c_pic
                 else:
                     rank=f_pic
-                background.paste(rank.resize(size=(height-2*blank-16,height-2*blank-16)),box=(info_box[0]+8,info_box[1]+8),mask=rank.resize(size=(height-2*blank-10,height-2*blank-10)))
+                background.paste(rank.resize(size=(height-2*blank-16,height-2*blank-16)),box=(info_box[0]+8,info_box[1]+8),mask=rank.resize(size=(height-2*blank-16,height-2*blank-16)))
                 draw.text(((x+1)*width-blank-250,y*height+offset+blank+15),str(songs[times]['score']),fill=(255,255,255),font=song_font)
                 draw.text(((x+1)*width-blank-440,y*height+offset+blank+80),'ACC: {:.3f}'.format(songs[times]['acc'])+'%     RKS: {:.3f}'.format(songs[times]['rks']),fill=(255,255,255),font=composer_font)
             else:

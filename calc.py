@@ -48,8 +48,10 @@ def get_phigros_info(score_list):
         used_score_2[x]['is_full_combo']=is_full_combo
         used_score_2[x]['is_phi']=is_phi
         used_score_2[x]['rks']=single_rks
-        #print(used_score_2[x])
     best19=[]
+    # print(used_score_2)
+    sorted_score=sorted(used_score_2.values(),key=lambda x:x['rks'],reverse=True)
+    """
     for x in used_score_2.keys():
         if len(best19)<19:
             best19.append(used_score_2[x])
@@ -63,11 +65,16 @@ def get_phigros_info(score_list):
                     best19.pop(y)
                     best19.append(used_score_2[x])
                     break
-    sorted_b19=sorted(best19,key=lambda x:x['rks'],reverse=True)
+    """
+    sorted_b19 = []
+    for x in range(len(sorted_score)):
+        if x < 19 and sorted_score[x]['score']!=0:
+            sorted_b19.append(sorted_score[x])
+    # sorted_b19=sorted(best19,key=lambda x:x['rks'],reverse=True)
     philist=[]
-    for x in used_score_2.keys():
-        if used_score_2[x]['is_phi']:
-            philist.append(used_score_2[x])
+    for x in sorted_score:
+        if x['is_phi']:
+            philist.append(x)
     best_phi=None
     if len(philist)!=0:
         best_phi=sorted(philist,key=lambda x:x['rks'],reverse=True)[0]

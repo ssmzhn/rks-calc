@@ -41,7 +41,7 @@ def main(file):
         print('没有 Phi 哦，多练！')
     else:
         print('Best Phi: {} {} Lv.{} {}'.format(phi['song'],phi['level'],phi['difficulty'],phi['score']))
-    print('          ACC: {} 单曲RKS: {}'.format(phi['acc'],phi['rks']))
+        print('          ACC: {} 单曲RKS: {}'.format(phi['acc'],phi['rks']))
     print('----Best 19----')
     i=0
     for x in info['b19']:
