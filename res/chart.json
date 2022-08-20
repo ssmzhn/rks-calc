@@ -1011,22 +1011,26 @@
             "EZ": {
                 "level": "7",
                 "difficulty": "7.7",
-                "combo": "414"
+                "combo": "414",
+				"charter": "信仰の剣『生』"
             },
             "HD": {
                 "level": "12",
                 "difficulty": "12.7",
-                "combo": "601"
+                "combo": "601",
+				"charter": "平川の剣『士』"
             },
             "IN": {
                 "level": "15",
                 "difficulty": "15.6",
-                "combo": "1018"
+                "combo": "1018",
+				"charter": "夜明の剣『靈』"
             },
             "AT": {
                 "level": "16",
                 "difficulty": "16.7",
-                "combo": "1114"
+                "combo": "1114",
+				"charter": "断罪の剣『神』"
             }
         }
     },
@@ -1251,17 +1255,20 @@
             "EZ": {
                 "level": "4",
                 "difficulty": "4.5",
-                "combo": "338"
+                "combo": "338",
+				"charter": "急流に巻き込まれ"
             },
             "HD": {
                 "level": "9",
                 "difficulty": "9.4",
-                "combo": "703"
+                "combo": "703",
+				"charter": "対流に巻き込まれ"
             },
             "IN": {
                 "level": "13",
                 "difficulty": "13.6",
-                "combo": "643"
+                "combo": "643",
+				"charter": "乱流に巻き込まれ"
             }
         }
     },
@@ -1277,17 +1284,20 @@
             "EZ": {
                 "level": "2",
                 "difficulty": "2.6",
-                "combo": "323"
+                "combo": "323",
+				"charter": "奇跡の希"
             },
             "HD": {
                 "level": "9",
                 "difficulty": "9.8",
-                "combo": "586"
+                "combo": "586",
+				"charter": "奇跡の希"
             },
             "IN": {
                 "level": "13",
                 "difficulty": "13.7",
-                "combo": "839"
+                "combo": "839",
+				"charter": "奇跡の希 feat. 奇跡の従"
             }
         }
     },
@@ -2418,18 +2428,20 @@
             "EZ": {
                 "level": "5",
                 "difficulty": "5.2",
-                "combo": "446"
+                "combo": "446",
+				"charter": "空の希"
             },
             "HD": {
                 "level": "11",
                 "difficulty": "11.1",
-                "combo": "902"
+                "combo": "902",
+				"charter": "空の希"
             },
             "IN": {
                 "level": "15",
                 "difficulty": "15.5",
                 "combo": "1322",
-                "charter": "ST AS is XMT"
+                "charter": "STAS is XMT"
             },
             "AT": {
                 "level": "16",
@@ -3887,7 +3899,8 @@
             "IN": {
                 "level": "15",
                 "difficulty": "15.3",
-                "combo": "616"
+                "combo": "616",
+				"charter": "縱連打の信者☆無極"
             }
         }
     },
