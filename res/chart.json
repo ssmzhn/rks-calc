@@ -478,7 +478,7 @@
                 "level": "15",
                 "difficulty": "15.8",
                 "combo": "1235",
-                "charter": "分化者 fixed by Barbarianerman"
+                "charter": "分化者"
             },
             "Legacy": {
                 "level": "15",
@@ -676,7 +676,7 @@
     },
     "JunXion Between Life And Death(VIP Mix)": {
         "song": "JunXion Between Life And Death(VIP Mix)",
-        "illustration": "https://img.moegirl.org.cn/common/thumb/b/bd/JunXion_Phigros.png/300px-JunXion_Phigros.png",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/5/51/JunXion_%E6%96%B0_Phigros.jpeg/300px-JunXion_%E6%96%B0_Phigros.jpeg",
         "chapter": "Chapter 5 霓虹灯牌",
         "bpm": "164",
         "composer": "1N6Fs",
@@ -1012,25 +1012,25 @@
                 "level": "7",
                 "difficulty": "7.7",
                 "combo": "414",
-				"charter": "信仰の剣『生』"
+                "charter": "信仰の剣『生』"
             },
             "HD": {
                 "level": "12",
                 "difficulty": "12.7",
                 "combo": "601",
-				"charter": "平川の剣『士』"
+                "charter": "平川の剣『士』"
             },
             "IN": {
                 "level": "15",
                 "difficulty": "15.6",
                 "combo": "1018",
-				"charter": "夜明の剣『靈』"
+                "charter": "夜明の剣『靈』"
             },
             "AT": {
                 "level": "16",
                 "difficulty": "16.7",
                 "combo": "1114",
-				"charter": "断罪の剣『神』"
+                "charter": "断罪の剣『神』"
             }
         }
     },
@@ -1256,19 +1256,19 @@
                 "level": "4",
                 "difficulty": "4.5",
                 "combo": "338",
-				"charter": "急流に巻き込まれ"
+                "charter": "急流に巻き込まれ"
             },
             "HD": {
                 "level": "9",
                 "difficulty": "9.4",
                 "combo": "703",
-				"charter": "対流に巻き込まれ"
+                "charter": "対流に巻き込まれ"
             },
             "IN": {
                 "level": "13",
                 "difficulty": "13.6",
                 "combo": "643",
-				"charter": "乱流に巻き込まれ"
+                "charter": "乱流に巻き込まれ"
             }
         }
     },
@@ -1285,19 +1285,19 @@
                 "level": "2",
                 "difficulty": "2.6",
                 "combo": "323",
-				"charter": "奇跡の希"
+                "charter": "奇跡の希"
             },
             "HD": {
                 "level": "9",
                 "difficulty": "9.8",
                 "combo": "586",
-				"charter": "奇跡の希"
+                "charter": "奇跡の希"
             },
             "IN": {
                 "level": "13",
                 "difficulty": "13.7",
                 "combo": "839",
-				"charter": "奇跡の希 feat. 奇跡の従"
+                "charter": "奇跡の希 feat. 奇跡の従"
             }
         }
     },
@@ -1547,7 +1547,7 @@
     },
     "Another Me (Rising Sun Traxx)": {
         "song": "Another Me (Rising Sun Traxx)",
-        "illustration": "https://img.moegirl.org.cn/common/thumb/6/67/Another_Me_Phigros.png/300px-Another_Me_Phigros.png",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/5/5c/Another_Me_%E6%96%B0_Phigros.jpeg/300px-Another_Me_%E6%96%B0_Phigros.jpeg",
         "chapter": "Chapter EX-Rising Sun Traxx 精选集",
         "bpm": "175",
         "composer": "Neutral Moon",
@@ -2429,25 +2429,118 @@
                 "level": "5",
                 "difficulty": "5.2",
                 "combo": "446",
-				"charter": "空の希"
+                "charter": "空の希"
             },
             "HD": {
                 "level": "11",
                 "difficulty": "11.1",
                 "combo": "902",
-				"charter": "空の希"
+                "charter": "空の希"
             },
             "IN": {
                 "level": "15",
                 "difficulty": "15.5",
                 "combo": "1322",
-                "charter": "STAS is XMT"
+                "charter": "ST"
             },
             "AT": {
                 "level": "16",
                 "difficulty": "16.4",
                 "combo": "1700",
                 "charter": "百九十八"
+            }
+        }
+    },
+    "Shadow": {
+        "song": "Shadow",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/f/fe/Shadow_Phigros.png/300px-Shadow_Phigros.png",
+        "chapter": "Chapter EX-姜米條 精选集",
+        "bpm": "172",
+        "composer": "姜米条&SumaiLight",
+        "length": "2:23",
+        "illustrator": "御坂果子",
+        "chart": {
+            "EZ": {
+                "level": "4",
+                "difficulty": "4.7",
+                "combo": "393",
+                "charter": "晨"
+            },
+            "HD": {
+                "level": "10",
+                "difficulty": "10.3",
+                "combo": "549",
+                "charter": "晨"
+            },
+            "IN": {
+                "level": "14",
+                "difficulty": "14.5",
+                "combo": "840",
+                "charter": "Sillyp vs 晨"
+            },
+            "AT": {
+                "level": "15",
+                "difficulty": "15.9",
+                "combo": "1089",
+                "charter": "J0(_)I2|\\|3y'5 3|\\||)"
+            }
+        }
+    },
+    "心之所向": {
+        "song": "心之所向",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/8/87/%E5%BF%83%E4%B9%8B%E6%89%80%E5%90%91_Phigros.png/300px-%E5%BF%83%E4%B9%8B%E6%89%80%E5%90%91_Phigros.png",
+        "chapter": "Chapter EX-姜米條 精选集",
+        "bpm": "180",
+        "composer": "姜米條",
+        "length": "2:16",
+        "illustrator": "笔记RE",
+        "chart": {
+            "EZ": {
+                "level": "4",
+                "difficulty": "4.4",
+                "combo": "226",
+                "charter": "波之所杂"
+            },
+            "HD": {
+                "level": "9",
+                "difficulty": "9.7",
+                "combo": "422",
+                "charter": "波之所杂"
+            },
+            "IN": {
+                "level": "13",
+                "difficulty": "13.6",
+                "combo": "713",
+                "charter": "倪之所爽"
+            }
+        }
+    },
+    "inferior": {
+        "song": "inferior",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/4/47/Inferior.png/300px-Inferior.png",
+        "chapter": "Chapter EX-姜米條 精选集",
+        "bpm": "200",
+        "composer": "姜米條",
+        "length": "2:03",
+        "illustrator": "群青kurara",
+        "chart": {
+            "EZ": {
+                "level": "7",
+                "difficulty": "7.1",
+                "combo": "226",
+                "charter": "Ner, the inferior"
+            },
+            "HD": {
+                "level": "7",
+                "difficulty": "7.9",
+                "combo": "489",
+                "charter": "Ner, the inferior"
+            },
+            "IN": {
+                "level": "14",
+                "difficulty": "14.6",
+                "combo": "755",
+                "charter": "JKy, the inferior"
             }
         }
     },
@@ -2604,19 +2697,19 @@
                 "level": "5",
                 "difficulty": "5.7",
                 "combo": "307",
-                "charter": "猫の信 & 百九十八"
+                "charter": "猫の信"
             },
             "HD": {
                 "level": "9",
                 "difficulty": "9.7",
                 "combo": "648",
-                "charter": "猫の信 & 百九十八"
+                "charter": "猫の信"
             },
             "IN": {
                 "level": "13",
                 "difficulty": "13.3",
                 "combo": "781",
-                "charter": "猫の信 & 百九十八"
+                "charter": "猫の信"
             },
             "Legacy": {
                 "level": "13",
@@ -2963,7 +3056,7 @@
         "illustration": "https://img.moegirl.org.cn/common/thumb/b/b9/Sein_Phigros.png/300px-Sein_Phigros.png",
         "chapter": "单曲精选集",
         "bpm": "210",
-        "composer": "朔(Apo11o program vs. お月さま交響曲) ft. kuroa×荒巻",
+        "composer": "朔(Apo11o program vs.",
         "length": "1:59",
         "illustrator": "hideo",
         "chart": {
@@ -2983,7 +3076,7 @@
                 "level": "14",
                 "difficulty": "14.9",
                 "combo": "721",
-                "charter": "A.S.H&晨"
+                "charter": "A.S.H"
             }
         }
     },
@@ -3014,17 +3107,17 @@
                 "combo": "968",
                 "charter": "晨"
             },
-            "AT": {
-                "level": "16",
-                "difficulty": "16.1",
-                "combo": "1325",
-                "charter": "Catcats aka. 無極 VS H.C.C. fixed by 野从&晨"
-            },
             "Legacy": {
                 "level": "14",
                 "difficulty": "--",
                 "combo": "954",
                 "charter": "Catcats aka. 無極 VS H.C.C."
+            },
+            "AT": {
+                "level": "16",
+                "difficulty": "16.1",
+                "combo": "1325",
+                "charter": "Catcats aka. 無極 VS H.C.C. fixed by 野从&晨"
             }
         }
     },
@@ -3759,35 +3852,6 @@
             }
         }
     },
-    "Shadow": {
-        "song": "Shadow",
-        "illustration": "https://img.moegirl.org.cn/common/thumb/f/fe/Shadow_Phigros.png/300px-Shadow_Phigros.png",
-        "chapter": "单曲精选集",
-        "bpm": "172",
-        "composer": "姜米条&SumaiLight",
-        "length": "2:23",
-        "illustrator": "御坂果子",
-        "chart": {
-            "EZ": {
-                "level": "4",
-                "difficulty": "4.7",
-                "combo": "393",
-                "charter": "晨"
-            },
-            "HD": {
-                "level": "10",
-                "difficulty": "10.3",
-                "combo": "549",
-                "charter": "晨"
-            },
-            "IN": {
-                "level": "14",
-                "difficulty": "14.5",
-                "combo": "840",
-                "charter": "Sillyp vs 晨"
-            }
-        }
-    },
     "Wavetapper": {
         "song": "Wavetapper",
         "illustration": "https://img.moegirl.org.cn/common/thumb/1/1e/Wavetapper_Phigros.png/300px-Wavetapper_Phigros.png",
@@ -3900,7 +3964,7 @@
                 "level": "15",
                 "difficulty": "15.3",
                 "combo": "616",
-				"charter": "縱連打の信者☆無極"
+                "charter": "縱連打の信者"
             }
         }
     },
@@ -4074,7 +4138,7 @@
                 "level": "15",
                 "difficulty": "15.4",
                 "combo": "833",
-                "charter": "森德雷斯 vs. 百九十八"
+                "charter": "森德雷斯"
             }
         }
     },
@@ -4542,6 +4606,35 @@
             }
         }
     },
+    "DataErr0r": {
+        "song": "DataErr0r",
+        "illustration": "https://img.moegirl.org.cn/common/thumb/c/c1/DataErr0r_Phigros.png/300px-DataErr0r_Phigros.png",
+        "chapter": "单曲精选集",
+        "bpm": "180",
+        "composer": "Cosmograph",
+        "length": "2:04",
+        "illustrator": "Photonskyto",
+        "chart": {
+            "EZ": {
+                "level": "6",
+                "difficulty": "6.1",
+                "combo": "50",
+                "charter": "[!!12:|<|<ο!!]"
+            },
+            "HD": {
+                "level": "11",
+                "difficulty": "11.6",
+                "combo": "400",
+                "charter": "Rikko"
+            },
+            "IN": {
+                "level": "14",
+                "difficulty": "14.6",
+                "combo": "613",
+                "charter": "TangScend -Err0rederci-"
+            }
+        }
+    },
     "Introduction": {
         "song": "Introduction",
         "illustration": "https://img.moegirl.org.cn/common/thumb/1/13/Introduction.png/300px-Introduction.png",
@@ -4549,7 +4642,7 @@
         "bpm": "180",
         "composer": "姜米條&ElousΛ.-FZ",
         "length": "2:29",
-        "illustrator": "--",
+        "illustrator": "L-sp4",
         "chart": {
             "EZ": {
                 "level": "2",

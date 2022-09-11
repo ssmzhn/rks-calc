@@ -26,13 +26,13 @@ def adb_extract(filename):
     os.system('adb devices')
     print('准备备份。请解锁手机，如果您将 Phigros 放入类似“隐藏应用”中，请将其移出。现在打开 Phigros 进行下一步。')
     pause()
-    print('当手机上有确认备份文件的页面弹出时，选择“备份所有文件”。注意：不要输入密码！！！')
+    print('当手机上有确认备份文件的页面弹出时，选择“备份所有文件”。')
     if os.system('adb backup -f {} com.PigeonGames.Phigros'.format(filename)) != 0:
         return -2
     return filename
 
-def main(file):
-    data_dir = unpack.unpack(file)
+def main(file,pswd):
+    data_dir = unpack.unpack(file,pswd)
     if data_dir == False:
         sys.exit(-3)
     xml_file = "{data_dir}{separate}apps{separate}com.PigeonGames.Phigros{separate}sp{separate}com.PigeonGames.Phigros.v2.playerprefs.xml".format(data_dir=data_dir,separate=unpack.separate)
@@ -74,7 +74,9 @@ if __name__ == '__main__':
             break
         print('输入有误，请重新输入。')
     if choice == '1':
-        main(input('请输入 adb 备份后的 .ab 文件绝对路径: '))
+        backupname = input('请输入 adb 备份后的 .ab 文件绝对路径: ')
+        backuppassword = input('请输入存档密码 (无密码就直接按回车继续): ')
+        main(backupname,backuppassword)
     elif choice == '2':
         file = input('请输入存档的保存位置 (绝对路径，包括文件名，扩展名为 .ab): ')
         adb_code = adb_extract(file)

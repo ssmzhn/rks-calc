@@ -4,3 +4,4 @@ requests
 pillow
 pycryptodome
 getch
+beautifulsoup4
